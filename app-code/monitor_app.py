@@ -21,5 +21,5 @@ def send_status():
     )
     print(f"Update sent to AWS: {message}")
 
-if name == "main":
+if __name__ == "__main__":
     send_status()
