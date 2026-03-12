@@ -19,8 +19,8 @@ sh 'aws logs describe-log-groups --log-group-name-prefix /aws/devops/autonomous-
 }
 stage('Deploy & Monitor') {
 steps {
-echo 'Deploying Application to Local Container...'
-sh 'python3 app-code/monitor_app.py &'
+echo 'Deploying Application...'
+sh 'python3 app-code/monitor_app.py'
 }
 }
 }
